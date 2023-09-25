@@ -1,0 +1,182 @@
+:root{
+	--colorPrimary: #FA6262;
+	--colorCard: #FBFBFB;
+	--colorTagBlue:#C7E3EF;
+	--colorTagBlueSec: #A1DBED;
+	--colorTagYellow: #FFFACC;
+	--colorTagGreen: #E2EFC7;
+	--colorTagGreenSec: #D4EDA1;
+	--colorTagPink: #EFC7C7;
+}
+
+.tagColorBlue{
+	background-color: var(--colorTagBlue);
+}
+
+.tagColorBlueSec{
+	background-color: var(--colorTagBlueSec);
+}
+
+.tagColorYellow{
+	background-color: var(--colorTagYellow);
+}
+
+.tagColorGreen{
+	background-color: var(--colorTagGreen);
+}
+
+.tagColorGreenSec{
+	background-color: var(--colorTagGreenSec);
+}
+
+.tagColorPink{
+	background-color: var(--colorTagPink);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 25px 40px;
+	margin: 0;
+}
+
+header{
+	height: 80px;
+	width: 100%;
+	font-family: 'Poppins';
+	font-weight: 800;
+	display: flex;
+	justify-content: space-between;
+}
+
+header>h1{
+	margin: 0;
+	color: var(--colorPrimary);
+}
+
+header>div{
+	display: flex;
+	flex-direction: row;
+}
+
+header>div>p{
+	margin-left: 20px;
+}
+
+main{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.welcomeTitle{
+	font-family: 'Poppins';
+	font-size: 60px;
+	line-height: 78px;
+}
+
+.welcomeText{
+	width: 467px;
+	font-family: 'Inter';
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.welcomeLinks{
+	display: flex;
+	flex-direction: row;
+}
+
+.welcomeLinks>div{
+	height: 50px;
+	width: 195px;
+	border-radius: 16px;
+	padding-left: 50px;
+	margin-right: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	font-family: 'Inter';
+	font-size: 14px;
+}
+
+.welcomeArrowContainer{
+	height: 50px;
+	width: 47px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+}
+
+.welcomeArrowContainer>img{
+	height: 14px;
+	width: 14px;
+}
+
+.cardsContainer{
+	height: 750px;
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card{
+	height: 332px;
+	width: 347px;
+	padding: 5px 20px;
+	margin: 0px 30px 15px 0px;
+	border-radius: 16px;
+	background-color: var(--colorCard);
+	box-shadow: 4px 3px 12px lightgray;
+	position: relative;
+}
+
+.cardTags{
+	display: flex;
+	flex-direction: row;
+}
+
+.cardTag{
+	margin-right: 10px;
+	padding: 4px 13px;
+	border-radius: 4px;
+	font-family: 'Inter';
+}
+
+.cardTitle{
+	font-size: 36px;
+	line-height: 39.6px;
+	font-family: 'Poppins';
+}
+
+.cardText{
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Inter';
+}
+
+.cardArrowContainer{
+	height: 41px;
+	width: 42px;
+	border-radius: 0px 0px 16px 0px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--colorPrimary);
+}
+
+.cardArrow{
+	height: 19px;
+	width: 19px;
+}
