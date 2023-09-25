@@ -51,18 +51,41 @@ header{
 	justify-content: space-between;
 }
 
-header>h1{
+header > h1{
 	margin: 0;
 	color: var(--colorPrimary);
 }
 
-header>div{
+header > h1:hover{
+	background: -webkit-linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: 5s;
+}
+
+header > div{
 	display: flex;
 	flex-direction: row;
 }
 
-header>div>p{
+header > div > p{
 	margin-left: 20px;
+}
+
+.headerShowA:after{
+	content: "About";
+}
+
+.headerShowA:hover:after{
+	content: "Nepp!";
+}
+
+.headerShowC:after{
+	content: "Contact";
+}
+
+.headerShowC:hover:after{
+	content: "Finns inte!";
 }
 
 main{
@@ -90,7 +113,7 @@ main{
 	flex-direction: row;
 }
 
-.welcomeLinks>div{
+.welcomeLinks > div{
 	height: 50px;
 	width: 195px;
 	border-radius: 16px;
@@ -102,6 +125,15 @@ main{
 	position: relative;
 	font-family: 'Inter';
 	font-size: 14px;
+	transition: 0.2s;
+}
+
+.welcomeLinks > div:hover{
+	transform: scale(1.04);
+}
+
+.welcomeLinks > div:hover > div{
+	transform: scale(1.07);
 }
 
 .welcomeArrowContainer{
@@ -113,9 +145,10 @@ main{
 	justify-content: center;
 	position: absolute;
 	right: 0;
+	transition: 0.2s;
 }
 
-.welcomeArrowContainer>img{
+.welcomeArrowContainer > img{
 	height: 14px;
 	width: 14px;
 }
@@ -137,6 +170,11 @@ main{
 	background-color: var(--colorCard);
 	box-shadow: 4px 3px 12px lightgray;
 	position: relative;
+	transition: 0.2s;
+}
+
+.card:hover{
+	transform: scale(1.04);
 }
 
 .cardTags{
