@@ -218,3 +218,35 @@ main{
 	height: 19px;
 	width: 19px;
 }
+
+@media (max-width: 400px){
+	.welcome{
+		position: absolute;
+		top: 50px;
+	}
+
+	.welcomeTitle{
+		position: relative;
+		right: 10px;
+	}
+
+	.welcomeText{
+		width: 300px;
+	}
+
+	.cardsContainer{
+		margin-top: 620px;
+	}
+
+	.welcomeLinks{
+		flex-direction: column;
+	}
+
+	.welcomeLinks > div{
+		margin-bottom: 25px;
+	}
+
+	.card{
+		width: 300px;
+	}
+}
